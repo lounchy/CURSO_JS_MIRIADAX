@@ -1,0 +1,49 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navegacion {
+    position: relative;
+    background-color: #ff8104;
+    height: 75px;
+}
+
+.nav-titulo {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-left: 15px;
+}
+
+.boton {
+    margin-top: 5px;
+    padding: 5 10 5 10;
+    cursor: pointer;
+    border: 1px solid #ff8104;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #ff8104;
+    font-size: 1.2rem;
+}
+
+.boton:hover {
+    background-color: #ff8104;
+    color: #ffffff;
+}
+
+input {
+    padding: 5 10 5 10;
+    border: solid 1px #ff8104;
+}
