@@ -1,0 +1,50 @@
+{
+    "objectId": "PB001",
+    "owner": {
+        "objectId": "OW001",
+        "phone": "600000000",
+        "name": "Hayley Reader",
+        "title": "Bookmaker",
+        "age": 30,
+        "adress": {
+            "objectId": "A001",
+            "street": "Gledhow Park View",
+            "city": "Midland",
+            "state": "Míchigan"
+        }
+    },
+    "contacts": [
+        {
+            "objectId": "CPB001",
+            "owner": {
+                "objectId": "COW001",
+                "phone": "611111111",
+                "name": "Kiefer Esquivel",
+                "title": "Healthcare assistant",
+                "age": 40,
+                "adress": {
+                    "objectId": "CA001",
+                    "street": "Astor Drive",
+                    "city": "Dorval",
+                    "state": "Quebec"
+                }
+            }
+        },
+        {
+            "objectId": "CPB002",
+            "owner": {
+                "objectId": "COW002",
+                "phone": "622222222",
+                "name": "Tylor Waters",
+                "title": "Book-keeper",
+                "age": 18,
+                "adress": {
+                    "objectId": "CA002",
+                    "street": "Cumberland Quay",
+                    "city": "Spanish Fork",
+                    "state": "Utah"
+                }
+            }
+        }
+    ]
+}
