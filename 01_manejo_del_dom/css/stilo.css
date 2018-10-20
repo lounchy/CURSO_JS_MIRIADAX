@@ -1,0 +1,53 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navegacion {
+    position: relative;
+    background-color: #ff8104;
+    height: 75px;
+}
+
+.nav-titulo {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.fila {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.boton {
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    cursor: pointer;
+    border: 1px solid #ff8104;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #ff8104;
+    font-size: 1.2rem;
+}
+.boton:hover {
+    background-color: #ff8104;
+    color: #ffffff;
+}
+.container {
+    margin-left: 15px;
+}
+.container p {
+    width: 20%;
+    background-color: #ff8104;
+    padding: 15px;
+}
