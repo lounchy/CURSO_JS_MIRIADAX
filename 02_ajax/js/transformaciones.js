@@ -22,7 +22,8 @@ function obtenerJson() {
             console.log("ALgo va mal");
         }
     }
-    xhttp.open("GET", "json/phone_book.json", true);
+    var url = 'https://api.myjson.com/bins/lnquw';
+    xhttp.open("GET", url, true);
     xhttp.responseType = 'json';
     xhttp.send();
 
@@ -36,7 +37,6 @@ function jsonAstring(json) {
 }
 function stringAjson() {
     var contenidoString = elemento.textContent;
-    var msg = "";
     if (contenidoString.length > 0) {
         //Asi se consigue el transformar String a JSON 
         var contenidoJSON = JSON.parse(contenidoString);
