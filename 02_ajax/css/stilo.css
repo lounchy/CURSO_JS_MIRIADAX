@@ -35,7 +35,7 @@ form {
     border-radius: 8px;
     background-color: transparent;
     color: #ff8104;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .boton:hover {
@@ -44,6 +44,7 @@ form {
 }
 
 input {
+    width: 50%;
     padding: 5 10 5 10;
     border: solid 1px #ff8104;
 }

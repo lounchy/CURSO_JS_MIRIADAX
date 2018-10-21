@@ -13,16 +13,31 @@
     <div class="navegacion">
         <p class="nav-titulo">Programación con JavaScript (2ª edición)</p>
     </div>
+    <!--Ajax y XML-->
     <h2>Realización de petición AJAX a un XML</h2>
-    <hr>
-
+    <br>
     <form onsubmit="return false">
         <div>
-            <input id="respuesta">
+            <input id="respuesta_xml">
         </div>
-        <button type="submit" class="boton" id="obtener_contenido">Obtener Contenido</button>
+        <button type="submit" class="boton" id="obtener_xml_contenido">Obtener Contenido  XML</button>
     </form>
+    <hr>
+    <!--Ajax y JSON-->
+    <h2>Realización de petición AJAX a un JSON</h2>
+    <br>
+    <form onsubmit="return false">
+        <div>
+            <input id="respuesta_json">
+        </div>
+        <button type="submit" class="boton" id="obtener_json_contenido">Obtener Contenido  JSON</button>
+    </form>
+    <hr>
+
     <script src="js/ejemploXML.js"></script>
+  
+    <script src="js/ejemploJSON.js"></script>
+
 </body>
 
 </html>

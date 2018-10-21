@@ -1,9 +1,9 @@
 /*
 *Enviar la petición por Ajax, obtener el contenido y visualizarlo
 */
-var btnObtener = document.getElementById("obtener_contenido");
-btnObtener.onclick = function(){obtenerContenido()};
-function obtenerContenido(){
+var btnObtener = document.getElementById("obtener_xml_contenido");
+btnObtener.onclick = function(){obtenerXMLContenido()};
+function obtenerXMLContenido(){
     var xhttp;
     if(window.XMLHttpRequest){
         xhttp = new XMLHttpRequest;      
@@ -14,7 +14,7 @@ function obtenerContenido(){
         if(this.readyState == 4 && this.status == 200){
             console.log("Todo bien");
             var xml = xhttp.responseXML;
-            visualizarContenido(xml);
+            visualizarXMLContenido(xml);
         }else{
             console.log("ALgo va mal");
         }
@@ -24,9 +24,9 @@ function obtenerContenido(){
     
 }
 
-function visualizarContenido(xml){
+function visualizarXMLContenido(xml){
     var contenido = xml.getElementsByTagName("contenido")[0].childNodes[0].nodeValue;
-    var elemento = document.getElementById("respuesta");
+    var elemento = document.getElementById("respuesta_xml");
     elemento.value = contenido;
 }
 
