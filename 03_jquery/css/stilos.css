@@ -1,0 +1,38 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navegacion {
+    position: relative;
+    background-color: #ff8104;
+    height: 75px;
+}
+
+.nav-titulo {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+h2 {
+    text-align: center;
+}
+.fila {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+input {
+    width: 33%;
+    padding: 5 10 5 10;
+    border: solid 1px #ff8104;
+    text-align: center;
+    margin: 0 10 0 10;
+}
+#contenedor_parrafos{
+    padding: 0 15 0 15;
+}
