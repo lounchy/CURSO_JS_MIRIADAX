@@ -1,0 +1,97 @@
+[
+    {
+        "pregunta" : "¿Cuantos amigos tengo?",
+        "respuestas" : [
+            {
+                "respuesta" : "4"
+            },
+            {
+                "respuesta" : "6"
+            },
+            {
+                "respuesta" : "3"
+            },
+            {
+                "respuesta" : "8"
+            }
+        ],
+        "correcta" : 3,
+        "verdadera" : null            
+    },
+    {
+        "pregunta" : "De todos mis amigos ¿cantas son mujeres?",
+        "respuestas" : [
+            {
+                "respuesta" : "1"
+            },
+            {
+                "respuesta" : "3"
+            },
+            {
+                "respuesta" : "6"
+            },
+            {
+                "respuesta" : "0"
+            }
+        ],
+        "correcta" : 1,
+        "verdadera" : null
+    },
+    {
+        "pregunta" : "De todos mis amigos ¿a cuantos la primera letra de su nombre es la M?",
+        "respuestas" : [
+            {
+                "respuesta" : "2"
+            },
+            {
+                "respuesta" : "6"
+            },
+            {
+                "respuesta" : "3"
+            },
+            {
+                "respuesta" : "1"
+            }
+        ],
+        "correcta" : 2,
+        "verdadera" : null
+    },
+    {
+        "pregunta" : "De todos mis amigos más joven es:",
+        "respuestas" : [
+            {
+                "respuesta" : "Mario"
+            },
+            {
+                "respuesta" : "Carmen"
+            },
+            {
+                "respuesta" : "Alerto"
+            },
+            {
+                "respuesta" : "Pablo"
+            }
+        ],
+        "correcta" : 0,
+        "verdadera" : null
+    },
+    {
+        "pregunta" : "¿Cuantos años tiene Juan?",
+        "respuestas" : [
+            {
+                "respuesta" : "36"
+            },
+            {
+                "respuesta" : "34"
+            },
+            {
+                "respuesta" : "18"
+            },
+            {
+                "respuesta" : "33"
+            }
+        ],
+        "correcta" : 3,
+        "verdadera" : null
+    }
+]

@@ -1,0 +1,113 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navegacion {
+    position: relative;
+    background-color: #ff8104;
+    height: 75px;
+}
+.nav-titulo {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contenedor{
+    width: 30%;
+    margin-left: 15px;
+}
+.contenedor input{
+    border: 1px solid #ff8104;
+    padding: 5 15 5 15;
+    width: 100%;
+    font-size: 1rem;
+}
+.contenedor button{
+    width: 100%;
+    border: 1px solid #ff8104;
+    background: transparent;
+    color: #ff8104;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.contenedor button:hover{
+    background: #ff8104;
+    color: #fff;
+}
+
+.contenedorTest{
+    margin-left: 15px;
+}
+
+.progresso{
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid #ff8104;
+    padding: 15 20 15 20 ;
+    text-align: center;
+    color: #ff8104;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 50px;
+}
+.progresso-verdadera{
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid #2eaa08;
+    background: #2eaa08;
+    padding: 15 20 15 20 ;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 50px;
+}
+.progresso-falsa{
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid #eb0d0d;
+    background: #eb0d0d;
+    padding: 15 20 15 20 ;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 50px;
+}
+.contenedor-pregunta{
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 0 20 20 20;
+    border: 1px solid #8f8f8f;
+    border-radius: 15px;
+    background: #ff81047e;
+    text-align: center
+
+}
+.contenedor-pregunta h4{
+    text-align: left;
+}
+.contenedorTest button{
+    width: 45%;
+    margin: 0 15 15 15;
+    font-size: 1.2rem;
+    padding: 5px;
+    cursor: pointer;
+    border: #fff;
+    background: #fff;
+    border-radius: 15px;
+}
+.contenedorTest button:hover{
+    background: #ff81047e;
+}

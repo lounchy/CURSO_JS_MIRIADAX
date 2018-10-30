@@ -1,0 +1,78 @@
+<!doctype <!DOCTYPE html>
+<html ng-app="amigoTestApp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stilos.css" />
+
+</head>
+
+<body>
+    <div class="navegacion">
+        <p class="nav-titulo">Programación con JavaScript (2ª edición)</p>
+    </div>
+    <h2>Nuestra primera aplicación con Angular</h2>
+    <br>
+    <!--Amigos Controlador-->
+    <div class="contenedor" ng-controller="amigosCtrl as amigos" ng-hide="amigos.pantalla.testActivo">
+        <input ng-model="buscarAmigo" type="text" placeholder="Buscar amigo...">
+        <h3>Tengo {{amigos.objetoAmigos.length}} amigos y son: </h3>
+        <p ng-repeat="amigo in amigos.objetoAmigos | filter : buscarAmigo">[{{$index + 1}}] - {{amigo.nombre}} tiene
+            {{amigo.edad}} años</p>
+        <button ng-click="amigos.activarTest()">Empezar el test</button>
+    </div>
+    <!--/Amigos Controlador-->
+
+    <!--Test Controlador-->
+    <div class="contenedorTest" ng-controller="testCtrl as test" ng-show="test.pantalla.testActivo">
+        <!--Indice Preguntas-->
+        <div class="progresso" ng-repeat="pregunta in test.objetoTest" ng-class="{'progresso-verdadera' : pregunta.verdadera == true,
+                    'progresso-falsa' : pregunta.verdadera == false}">
+            {{$index + 1}}</div>
+        <!--/Indice preguntas-->
+
+        <!--Contenedor preguntas-->
+        <div class="contenedor-pregunta" ng-hide="test.pantalla.testCompleto">
+            <h4>{{test.preguntaActual + 1}}. {{test.objetoTest[test.preguntaActual].pregunta}}</h4>
+            <button ng-repeat="respuesta in test.objetoTest[test.preguntaActual].respuestas" ng-click="test.proximaPregunta($index)">{{respuesta.respuesta}}</button>
+        </div>
+        <!--/Contenedor PReguntas-->
+
+        <!--Resultado-->
+        <div ng-show="test.pantalla.testCompleto">
+            <h3>{{test.imprimirResultado}}</h3>
+        </div>
+        <!--/Resultado-->
+    </div>
+    <!--/TestControlador-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--scripts de treceros-->
+    <script src="js/angular.min.js"></script>
+    <!--Mis scripts-->
+    <script src="js/amigoTestApp.js"></script>
+    <script src="js/controladores/amigos.js"></script>
+    <script src="js/controladores/test.js"></script>
+    <script src="js/factorias/datos.js"></script>
+    <script src="js/factorias/pantalla.js"></script>
+
+
+</body>
+
+</html>
